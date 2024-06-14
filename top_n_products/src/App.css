@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* navbar starts */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  background-color: #a5dd9b;
+}
+.nav-logo-container {
+  margin-left: 3%;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.navbar-cart-icon {
+  font-size: 1.15rem;
+}
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* navbar ends */
+
+/* SearchBar starts */
+.main {
+  display: flex;
+  /* height: 100vh; */
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 5%;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 40px;
+  color: rgb(1, 1, 59);
+}
+
+.search {
+  width: 30%;
+}
+
+ul li {
+  font-size: 20px;
+}
+/* SearchBar ends */
+
+/* Product-Category starts */
+.grid-wrapper {
+  margin: 10px auto;
+  padding: 0 10%;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+  text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin-top: 20px;
+}
+
+.box1 {
+  height: 255px;
+  width: 240px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.box1 img {
+  width: 200px;
+  height: 190px;
+}
+
+.btn {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #000;
+  /* color: #A5DD9B; */
+  text-decoration: none;
+}
+
+.btn:hover {
+  letter-spacing: 1px;
+  color: #a5dd9b;
+}
+
+.box1:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  color: #000000;
+}
+
+hr {
+  size: 300px;
+  border: 2px solid #a5dd9b;
+}
+/* Product-Category ends */
